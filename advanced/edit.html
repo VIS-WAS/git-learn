@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      div.container {
+        width: 300px;
+        height: 25px;
+        border: 5px solid black;
+      }
+      div.box {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 33%;
+        border: 2px solid red;
+        float: left;
+        text-align: center;
+      }
+      ul li {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="nav">
+      <li id="nav1">
+        <a href=""><span>Home</span></a>
+      </li>
+      <li id="nav2">
+        <a href=""><span>FAQ</span></a>
+      </li>
+      <li id="nav3">
+        <a href=""><span>About US</span></a>
+      </li>
+      <li id="nav4">
+        <a href=""><span>Contact US</span></a>
+      </li>
+      <li id="nav5">
+        <a href=""><span>Career</span></a>
+      </li>
+    </ul>
+
+    <p contenteditable="true">
+      Points, lines and angles are the basics of geometry which collectively
+      define the shapes of an object. An example of a combination of points,
+      lines and angles is a rectangle which has four vertices defined by a
+      point, four sides shown by lines and four angles equal to 90 degrees.
+      Similarly, we can define other shapes such as rhombus, parallelogram,
+      square, kite, cube, cuboid, etc using these three primary figures.
+    </p>
+
+    <h2>Lists are</h2>
+    <ul contenteditable="true">
+      <li>shop</li>
+      <li>play</li>
+    </ul>
+
+    <div class="container">
+      <div class="box">Name</div>
+      <div class="box">SSN</div>
+      <div class="box">Class</div>
+    </div>
+
+    <br /><br />
+    <button id="go" onclick="doIt()">Go</button>
+    <br /><br />
+    <span id="output"></span>
+
+    <div id="types">
+      Search <br />
+      spinbox <br />
+      slider <br />
+      color <br />
+    </div>
+    <span id="output"></span>
+
+    <script>
+      function doIt() {
+        // outputTXT = navigator.appCodeName + "<br>";
+        // outputTXT += navigator.appName + "<br>";
+        // outputTXT += navigator.userAgent + "<br>";
+        // document.getElementById("output").innerHTML = outputTXT;
+
+        var inputs = ["search", "number", "range", "color", "home"];
+        var inp = document.createElement("input");
+        console.log(inp);
+
+        for (var i = 0; i < inputs.length; i++) {
+          inp.setAttribute("type", inputs[i]);
+          if (inp.type == "text") {
+            document.getElementById("output").innerHTML +=
+              "input type " + inputs[i] + "No" + inp.type + "<br>";
+          } else {
+            document.getElementById("output").innerHTML +=
+              "input type " + inputs[i] + "Yes" + "<br>";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

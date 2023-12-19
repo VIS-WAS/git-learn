@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jsPage.js"></script>
+  </head>
+  <body>
+    <h2>Hello from vishwas</h2>
+    <p>Tell us about <span>your </span> course</p>
+    <div>
+      <script>
+        for (var item of courseArray) {
+          document.write(item, ", ");
+        }
+        document.write("<p></p>");
+      </script>
+    </div>
+    <form action="#" id="feedback">
+      <div>
+        <select
+          name=""
+          id="courses"
+          multiple
+          size="3"
+          onchange="cChoosen(this.value)"
+        >
+          <option value="angular">angular</option>
+          <option value="css">css</option>
+          <option value="nodeJs">nodeJs</option>
+          <option value="html">html</option>
+          <option value="Javascript">Javascript</option>
+        </select>
+      </div>
+
+      <div id="favorites" style="border: 1px solid black">
+        <div>
+          <!-- <label class="standOutLabel">favorite Instructor:</label> -->
+          <input
+            type="text"
+            id="instructionName"
+            minlength="5"
+            maxlength="10"
+          />
+        </div>
+
+        <div>
+          <!-- <label class="standOutLabel">favorite course</label> -->
+          <input type="text" id="instcourse" />
+        </div>
+
+        <div>
+          <!-- <label for="">did you like the course</label> -->
+        </div>
+        <div>
+          <div id="likes" style="display: flex">
+            <input type="radio" name="like" />Yes
+            <input type="radio" name="like" />No
+          </div>
+        </div>
+
+        <div id="nextCourse">
+          Upcomming course is:
+          <span id="courseName"></span>
+        </div>
+
+        <div>
+          <button class="green+btn" onclick="validate()">Send</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

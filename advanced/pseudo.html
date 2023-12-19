@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        p::first-letter{
+            font-size: large;
+            font-weight: bold;
+        }
+
+        p::first-line{
+            color: yellow;
+        }
+
+        #div1{
+            width: 200px;
+            height: 150px;
+            background-color: yellow;
+            box-shadow: 5px 10px 5px black;
+           background: linear-gradient(red,yellow,blue); 
+           position: absolute;
+           top: 300px;
+           opacity: 0.5;
+         /* background: -webkit-linear-gradient(left,green 0%,black 50%,red 100%); */
+        }
+
+        #div2{
+            width: 200px;
+            height: 150px;
+            background-color: yellow;
+            box-shadow: 5px 10px 5px black;
+           background: radial-gradient(circle,red,yellow); 
+            position: absolute;
+           top: 400px;
+           opacity: 0.5;
+         /* background: -webkit-linear-gradient(left,green 0%,black 50%,red 100%); */
+        }
+
+        .shadow{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40pt;
+            text-shadow: 15px 5px 8px ;
+         background: -webkit-linear-gradient(red,yellow,blue);
+        /* background-clip: text;
+         -webkit-text-fill-color: transparent; */
+        }
+        #vis{
+            width: 30%;
+            opacity: 0.5;
+            /* filter: alpha(opacity=50); */
+        }
+        input[type="range"]{
+            appearance: none;
+            border-radius: 10px;
+            background-image: -webkit-linear-gradient(top,black,white,black);
+        }
+
+        #uparrow{
+
+            /* background-color: yellow; */
+            width: 0px;
+            height: 0px;
+            border-left: 150px solid transparent;
+             border-right: 150px solid transparent;
+             border-bottom: 50px solid red; 
+
+        }
+    </style>
+  </head>
+  <body>
+
+    <div id="uparrow"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div>
+        <input type="range" name="num" id="num" min="0" max="100" value="50">
+    </div>
+    <img src="VISHWAS_MS_PHOTO.jpeg" id="vis">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <h1 class="shadow">Heading</h1>
+    <p>A paragraph is a series of sentences
+         that are organized and coherent, and 
+         are all related to a single topic. 
+         Almost every piece of writing you do 
+         that is longer than a few sentences 
+         should be organized into paragraphs. 
+         This is because paragraphs show a 
+         reader where the subdivisions of an 
+         essay begin and end, and thus help 
+         the reader see the organization of 
+         the essay and grasp its main 
+         points.
+        </p>
+<p>Paragraphs can contain many different kinds 
+    of information. A paragraph could contain a
+     series of brief examples or a single long 
+     illustration of a general point. It might 
+     describe a place, 
+    character, or process; narrate a series of
+     events; compare or contrast two or more things; classify items
+     into categories; or describe causes and 
+     effects. 
+</p>
+
+<p>     Regardless of the kind of information
+     they contain, all paragraphs share certain 
+     characteristics. One of the most important 
+     of these is a topic sentence.</p>
+</p>
+  </body>
+</html>

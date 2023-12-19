@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #marquee {
+        width: 680px;
+        height: 20px;
+        border: 1px solid black;
+        padding-left: 15px;
+      }
+    </style>
+    <script>
+      function showTime() {
+        now = new Date();
+        document.getElementById("output").innerHTML = now;
+        month = now.getMonth();
+        day = now.getDay();
+        document.getElementById("output").innerHTML += month;
+      }
+      function countStart() {
+        setInterval(function countdown() {
+          present = new Date();
+          then = Date.parse(document.getElementById("date").value);
+          daysLeft = then - now;
+          days = math.floor(daysLeft / (1000 * 60 * 60 * 24));
+          hours = math.floor(daysLeft / (1000 * 60 * 60));
+          mins = math.floor(daysLeft / (1000 * 60));
+          seconds = math.floor(daysLeft / 1000);
+
+          dd = days;
+          hh = hours - days * 24;
+          mm = mins - hours * 60;
+          document.getElementById("countdown").innerHTML =
+            dd + " " + hh + " " + mm + " " + ss;
+        }, 100);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" id="date" />
+    <button onclick="showTime()">SHow time</button> <br /><br />
+    <span id="output"></span>
+
+    <button onclick="countStart()">Start</button>
+    <div id="countDown"></div>
+
+    <button onclick="moveD()">Move</button>
+    <div id="marquee"></div>
+    <script>
+      myText =
+        "You can't offer such a low salary to someone who is so highly skilled - it's insulting.";
+      document.getElementById("marquee").innerHTML = myText;
+      function moveD() {
+        var check = confirm(" are you sure want ot see movement");
+
+        if (check) {
+          i = 0;
+
+          //   var seq = setInterval(move, 100);
+
+          function move() {
+            i++;
+            if (i > myText.length) {
+              i = 0;
+            }
+            marText = myText.substring(i, myText.length);
+            marText += myText.substring(0, i);
+            document.getElementById("marquee").innerHTML = marText;
+          }
+        }
+      }
+      function formValidate() {
+        var x;
+        var elm = document.forms[0];
+        var nameUser = elm[0].value;
+        console.log(nameUser);
+        var validNmae = /[vishwas]/;
+        if (nameUser.match(validNmae)) {
+          document.getElementById("dis").innerHTML = "you are registerd";
+        } else {
+          document.getElementById("dis").innerHTML = "you are not";
+        }
+      }
+    </script>
+
+    <form action="">
+      name: <input type="text" name="" id="" /> <br /><br />
+      address: <input type="text" name="" id="" /> <br /><br />email:
+      <input type="text" name="" id="" /><br /><br />
+      phone:
+      <input type="text" name="" id="" /> <br /><br />
+      <input type="button" value="validate" onclick="formValidate()" />
+      <br /><br />
+      <span id="dis"></span>
+    </form>
+  </body>
+</html>

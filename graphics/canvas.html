@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      #myCan1 {
+        background-color: seagreen;
+      }
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCan1"></canvas>
+
+    <canvas id="myCan" width="200" height="200"></canvas>
+
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script type="text/Javascript">
+      var canvas1 = document.getElementById("myCanvas");
+      var draw = canvas1.getContext("2d")
+      draw.fillStyle = "green";
+      draw.fillRect(50,50,200,200)
+
+      window.onload = function(){
+      var canvas1 = document.getElementById("myCan");
+      var draws = canvas1.getContext("2d")
+      draws.fillStyle = "rgb(125,16,72)";
+      draws.fillRect(100,100,100,100)
+
+      var canvas2 = document.getElementById("myCan1").getContext("2d");
+      canvas2.canvas.width = window.innerWidth;
+      canvas2.canvas.height = window.innerHeight;
+
+      }
+    </script>
+  </body>
+</html>

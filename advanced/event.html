@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        padding-left: 4px;
+        padding-top: 5px;
+        padding-right: 4px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function clickDiv(box) {
+        document.getElementById("div1").style.backgroundColor = "red";
+      }
+
+      window.onload = function () {
+        var myID = document.getElementById("myDiv");
+        myID.addEventListener("mouseover", react, false);
+      };
+      function react() {
+        document.getElementById("myDiv").style.fontSize = "30pt";
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      id="div1"
+      id="box"
+      onmouseover="clickDiv(this)"
+      onmouseleave="this.style.backgroundColor='yellow'"
+    >
+      this is vishwas
+    </div>
+    <br /><br />
+    <input type="file" name="" id="" />
+
+    <div id="myDiv">
+      <p>this is another way</p>
+    </div>
+  </body>
+</html>

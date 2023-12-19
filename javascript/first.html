@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/Javascript">
+
+        var x
+        var y=null
+
+        console.log(x)
+        console.log(y)
+        // alert("hello world")
+        // var y_n = confirm("are uou sure want ot continure")
+        // console.log(y_n)
+        // if(y_n){
+        //    var name= prompt("Please enter your name")
+        //    document.write(`Welcome ${name}`)
+        // }
+
+
+      function openSame() {
+
+        window.open("https://www.flipkart.com/the-gift-card-store?link=home_giftcard","_blank","top=100,left=200,height=400,width=600,toolbar=no,resizable=no");
+      }
+      function doIt(params,you) {
+        alert(params*you)
+      }
+      function again(params) {
+
+        alert(params.value)
+      }
+      function showMe() {
+       document.getElementById('output').innerText = "you showed me"
+       alert(x.innerHTML)
+      }
+
+      function validate() {
+        var classes = document.getElementsByClassName("class1")
+        document.getElementById('dis').innerHTML = classes[1].id+"<br>"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="div1" class="class1">class1</div>
+    <div id="div2" class="class1">class1</div>
+    <div id="div3" class="class2">class2</div>
+    <input type="button" value="click here" onclick="validate()" /> <br /><br />
+    <span id="dis"></span>
+    <button type="button" value="myBtn" onclick="again(this)">clickme</button>
+    <br /><br />
+
+    <button type="button" value="btn" onclick="showMe()">clickme</button>
+
+    <span id="output"> this is some text</span> <br /><br />
+    <button id="button1" onclick="doIt(5,10)">Click me</button><br /><br />
+    <a href="#" onclick="openSame()">Click me</a>
+    <br /><br />
+    <input
+      type="button"
+      value="Search"
+      name="register"
+      onclick="window.open('https://www.youtube.com','_blank')"
+    />
+  </body>
+</html>
