@@ -3,3 +3,5 @@ ask the input from user
 
 
 create avatar for user
+
+creating home page
