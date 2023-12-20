@@ -1,1 +1,2 @@
 get the user data
+ask the input from user
