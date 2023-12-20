@@ -1,2 +1,5 @@
 get the user data
 ask the input from user
+
+
+create avatar for user
