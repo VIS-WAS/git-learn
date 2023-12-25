@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family restorant</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img" alt="logo Image"></div>
+            </a>
+
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>Vishwas Restaurant</h1>
+              </a>
+              <p>
+                <img src="" alt="" />
+                <span class="glyphicon glyphicon-bookmark"
+                  >Food Company certified</span
+                >
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="visible-xs active">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span>Home
+                </a>
+              </li>
+              <li>
+                <a href="/aFirstsite/menu-categories.html">
+                  <span class="glyphicon glyphicon-cutlery"></span
+                  ><br class="hidden-xs" />Menu</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="glyphicon glyphicon-info-sign"></span
+                  ><br class="hidden-xs" />About US</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="glyphicon glyphicon-certificate"></span
+                  ><br class="hidden-xs" />Awards</a
+                >
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a href="tel:9916368345"><span>9916368345</span></a>
+                <div>* we deliver</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <div id="call-btn" class="visible-xs">
+      <a href="tel:9916368345">
+        <span class="glyphicon glyphicon-earphone"></span> </a
+      >9916368345
+    </div>
+    <div id="xs-deliver" class="text-center visible-xs">*We deliver</div> -->
+
+    <div id="main-content" class="container">
+      <div class="jumbotron">
+        <!--    <img
+          id="resto"
+          src="interior768.jpg"
+          alt="Picture of restorant"
+          class="imp-responsive"
+        /> -->
+      </div>
+
+      <div id="home-tiles" class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="menu-categories.html">
+            <div id="menu-tile">
+              <span>menu</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="single-category.html">
+            <div id="specials-tile">
+              <span>specials</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <a href="https://maps.app.goo.gl/XC6zmz7JdCv3vBgj8" target="_blank">
+            <div id="map-tile">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3889.1300788940534!2d77.57723039999999!3d12.899356200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1703430380941!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <span>map</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br />
+            Sun-Thurs: 10AM to 10PM <br />
+            Fri: 9AM to 4.30PM <br />
+            Saturday closed
+            <hr class="visible-xs" />
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br />
+            Gadiyar junction <br />
+            Near Mani, Puttur roada
+            <p>
+              Delivery within 5 km will be free and above that will be charged
+            </p>
+            <hr class="visible-xs" />
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>
+              * Best restorant i have been. I don't think, I will get a chance
+              to taste same item in other places
+            </p>
+            <p>* So beautifull, so eligant, just lookig like a wow!</p>
+            <hr class="visible-xs" />
+          </section>
+        </div>
+        <div class="text-center">&copy; Copyright Vishwas restorant</div>
+      </div>
+    </footer>
+
+    <script src="action.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
